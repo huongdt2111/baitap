@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Market Research Survey</h2>
+    <p style="color: gray; font-family:'Courier New', Courier, monospace"><b>Please take a few moments to complete this satisfaction survey</b></p>
+    <hr>
+    <form action="/action_page.php">
+        <label for="fname"><b>What is your age range?</b></label><br>
+        <select id="age" name="age">
+            <option value="5-10">5-10</option>
+            <option value="11-17">11-17</option>
+            <option value="18-24">18-24</option>
+            <option value="25-30">25-30</option>
+        </select><br>
+        <label for="fname"><b>What is your yearly income range?</b></label><br>
+            <select id="age" name="age">
+                <option value="$0 - $25,000"; padding: 50px>$0 - $25,000</option>
+                <option value="$25,000 - $50,000">$25,000 - $50,000</option>
+                <option value="$50,000 - $75,000">$50,000 - $75,000</option>
+                <option value="$75,000 - $100,000">$75,000 - $100,000</option>  
+            </select><br>
+        <p><b>Gender</b></p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="male">
+            <label for="gender">Gender</label><br>
+        <p><b>Which of the following products have your purchased in the last 2 months. Please check all that apply</b></p>
+            <form action="/action_page.php">
+                <input type="checkbox" id="product" name="product" value="1">
+                <label for="product">Product 1</label><br>
+                <input type="checkbox" id="product" name="product" value="2">
+                <label for="product">Product 2</label><br>
+                <input type="checkbox" id="product" name="product" value="3">
+                <label for="product">Product 3</label><br>
+              </form>
+        <p><b>How often would you use our new product?</b></p>
+            <input type="radio" id="product" name="product" value="often">
+            <label for="product">Daily</label><br>
+            <input type="radio" id="product" name="product" value="often">
+            <label for="product">Weekly</label><br>
+            <input type="radio" id="product" name="product" value="often">
+            <label for="product">Monthly</label><br>
+        <p><b>What would you pay for new product?</b></p>
+        <form action="/action_page.php" target="_blank">
+            <label for="lname">$</label>
+            <input type="text" id="fname" name="fname" size="10">
+            <label for="lname">.</label>
+            <input type="text" id="lname" name="lname" size="1"><br>
+        </form>
+        <pre style="margin-left:12px; margin-top: 0px;">Dollars         Cents</pre>
+        <p><b>What features would you like to see in the new product.</b></p>
+        <textarea row="30" cols="40"></textarea>
+    <p>Please rate your level of agrement with the following statements.</p>
+    </form>
+</body>
+<style>
+ table, th, td 
+{
+  border:0.1px solid rgb(198, 198, 198);
+  border-collapse: collapse;
+}
+</style>
+<body>
+<table style="width:50%">
+    <tr style="color:black; border-color:white; text-align: center;">
+        <td style="background-color:rgb(215, 215, 215)"></td>
+        <td style="background-color:rgb(215, 215, 215)">Strongly</td>
+        <td style="background-color:rgb(215, 215, 215)">Disagree</td>
+        <td style="background-color:rgb(215, 215, 215)">Agree</td>
+        <td style="background-color:rgb(215, 215, 215)">Strong agree</td>
+    </tr>
+    <tr style="color:black; border-color: white;">
+        <td><b>Our products are priced fairly. </b></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">1</label></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">2</label></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">3</label></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">4</label></td>
+    </tr>
+    <tr style="color:black; border-color: white; background-color:rgb(237, 237, 237) ">
+        <td><b>Our products are high quality.</b></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">1</label></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">2</label></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">3</label></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">4</label></td>
+    </tr>
+    <tr style="color:black; border-color: white;">
+        <td ><b>You would recommend our product to a friend or coworker.</b></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">1</label></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">2</label></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">3</label></td>
+        <td style="text-align:center"><input type="radio" id="number" name="number" value="number"><br>
+            <label for="number">4</label></td>
+    </tr>
+</table>
+<form>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
